@@ -1,6 +1,6 @@
 # Vue-LineFlex
 
-> unofficial Line Flex Message component by VueJS
+> Unofficial Line Flex Message component by VueJS
 
 ## Inspiration
 
