@@ -1,28 +1,21 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="pd-60px mg-t-100px">
+    <LineFlex :data="FlexData" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import LineFlex from './components/LineFlex'
+import FlexData from './assets/FlexData.json'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    LineFlex
+  },
+  data () {
+    return {
+      FlexData
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

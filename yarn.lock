@@ -1363,6 +1363,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+begeta@^0.1.19:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/begeta/-/begeta-0.1.19.tgz#2d3bc6bf3903499e1f02614a59ef98c03ae2c91b"
+
 bfj-node4@^5.2.0:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/bfj-node4/-/bfj-node4-5.3.1.tgz#e23d8b27057f1d0214fc561142ad9db998f26830"

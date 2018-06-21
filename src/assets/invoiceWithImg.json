@@ -1,0 +1,206 @@
+{
+  "type": "flex",
+  "altText": "This is a Flex message",
+  "contents": {
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "color": "#00c300",
+          "text": "ใบสั่งสินค้า",
+          "type": "text",
+          "weight": "bold"
+        },
+        {
+          "size": "xl",
+          "margin": "sm",
+          "text": "ร้านขนมบ้าน'เป็ดน้อย",
+          "type": "text",
+          "weight": "bold",
+          "wrap": false
+        },
+        {
+          "text": "#O0618M8OJWI00094",
+          "type": "text",
+          "size": "md",
+          "color": "#c5c6cb"
+        },
+        {
+          "type": "box",
+          "margin": "xl",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://www.linefriends.com/img/img_sec.jpg",
+              "aspectRatio": "1:1",
+              "aspectMode": "cover",
+              "flex": 1
+            },
+            {
+              "type": "box",
+              "margin": "md",
+              "layout": "vertical",
+              "flex": 4,
+              "contents": [
+                {
+                  "text": "Duck Toothbrush Holder",
+                  "type": "text",
+                  "wrap": false
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "text": "X1",
+                      "color": "#c5c6cb",
+                      "size": "sm",
+                      "type": "text",
+                      "gravity": "bottom",
+                      "wrap": false
+                    },
+                    {
+                      "color": "#00c43e",
+                      "text": "฿1,200.00",
+                      "weight": "bold",
+                      "type": "text",
+                      "gravity": "bottom",
+                      "align": "end"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://www.linefriends.com/img/img_sec.jpg",
+              "aspectRatio": "1:1",
+              "aspectMode": "cover",
+              "flex": 1
+            },
+            {
+              "type": "box",
+              "margin": "md",
+              "layout": "vertical",
+              "flex": 4,
+              "contents": [
+                {
+                  "text": "Duck Toothbrush Holder",
+                  "type": "text",
+                  "wrap": false
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "text": "X1",
+                      "color": "#c5c6cb",
+                      "size": "sm",
+                      "type": "text",
+                      "gravity": "bottom",
+                      "wrap": false
+                    },
+                    {
+                      "color": "#00c43e",
+                      "text": "฿1,200.00",
+                      "weight": "bold",
+                      "type": "text",
+                      "gravity": "bottom",
+                      "align": "end"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "margin": "md",
+          "type": "separator"
+        },
+        {
+          "contents": [
+            {
+              "flex": 3,
+              "text": "รายการสินค้า",
+              "type": "text",
+              "weight": "bold",
+              "wrap": false
+            },
+            {
+              "align": "end",
+              "flex": 2,
+              "text": "2",
+              "type": "text",
+              "weight": "bold"
+            }
+          ],
+          "layout": "horizontal",
+          "margin": "xl",
+          "type": "box"
+        },
+        {
+          "contents": [
+            {
+              "flex": 3,
+              "text": "ราคารวม",
+              "type": "text",
+              "weight": "bold",
+              "wrap": false
+            },
+            {
+              "align": "end",
+              "flex": 2,
+              "text": "฿600.00",
+              "type": "text",
+              "weight": "bold"
+            }
+          ],
+          "layout": "horizontal",
+          "margin": "md",
+          "type": "box"
+        }
+      ]
+    },
+    "footer": {
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "action": {
+                "label": "PAY NOW",
+                "type": "uri",
+                "uri": "line://app/1587039677-K0D6QEnv?bill_url=K8GQjca"
+              },
+              "style": "primary",
+              "type": "button"
+            }
+          ]
+        },
+        {
+          "margin": "md",
+          "type": "text",
+          "text": "ชำระก่อนวันที่ 12/08/2018",
+          "align": "center",
+          "color": "#c5c6cb",
+          "size": "sm"
+        }
+      ],
+      "layout": "vertical",
+      "spacing": "none",
+      "type": "box"
+    },
+    "type": "bubble"
+  }
+}
