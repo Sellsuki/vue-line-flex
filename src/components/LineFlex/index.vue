@@ -22,11 +22,6 @@ export default {
     boxContent,
     imageContent
   },
-  data () {
-    return {
-      boxContent: boxContent
-    }
-  },
   computed: {
     flexData () {
       const {header, hero, body, footer} = this.data.contents

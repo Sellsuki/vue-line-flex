@@ -11,11 +11,11 @@
 </template>
 
 <script>
+import boxContent from './boxContent'
 import textContent from './textContent'
 import imageContent from './imageContent'
 import buttonContent from './buttonContent'
 import spacerContent from './spacerContent'
-import boxContent from './boxContent'
 export default {
   name: 'boxContent',
   props: {
