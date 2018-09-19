@@ -2,7 +2,9 @@
   "name": "vue-line-flex",
   "version": "0.1.0",
   "main": "dist/vue-line-flex.umd.min.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -20,5 +22,9 @@
     "@vue/eslint-config-standard": "^3.0.0-rc.3",
     "vue-template-compiler": "^2.5.16"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

@@ -1,12 +1,6 @@
 <template>
   <div :class="['MdBx', layout(data.layout), margin(data.margin, '', data.layout, 'box')]">
-    <div :key="index" v-for="(content, index) in data.contents" :class="boxClass(content, data, index)">
-      <boxContent v-if="content.type === 'box'" :data="content" />
-      <textContent v-if="content.type === 'text'" :data="content" />
-      <imageContent v-else-if="content.type === 'image'" :data="content" />
-      <buttonContent v-else-if="content.type === 'button'" :data="content" />
-      <spacerContent v-else-if="content.type === 'spacer'" :data="content" />
-    </div>
+    <component :key="index" v-for="(content, index) in data.contents" :class="boxClass(content, data, index)" :is="findContent(content.type)" :data="content" ></component>
   </div>
 </template>
 
@@ -31,6 +25,9 @@ export default {
     spacerContent
   },
   methods: {
+    findContent (key) {
+      return `${key}Content`
+    },
     jsUcfirst (string) {
       return string.charAt(0).toUpperCase() + string.slice(1)
     },

@@ -111,7 +111,7 @@
         {
           "type": "box",
           "layout": "horizontal",
-          "contents": [
+          "``contents": [
             {
               "action": {
                 "label": "PAY NOW",

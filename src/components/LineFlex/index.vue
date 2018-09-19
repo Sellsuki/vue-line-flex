@@ -1,9 +1,6 @@
 <template>
   <div id="LineFlex" class="T1 w-280px bd-w-1px bd-st-solid bd-bg-cl-white bd-cl-grey-light">
-    <boxContent class="pd-20px" v-if="flexData.header" id="header" :data="flexData.header" />
-    <imageContent v-if="flexData.hero" id="hero" :data="flexData.hero" />
-    <boxContent class="pd-20px" v-if="flexData.body" id="body" :data="flexData.body" />
-    <boxContent class="pd-10px" v-if="flexData.footer" id="footer" :data="flexData.footer" />
+    <component :id="key" v-for="(data, key) in flexData" :key="key" :data="data" :class="findPadding(key)" :is="findComponent(key)"></component>
   </div>
 </template>
 
@@ -21,6 +18,26 @@ export default {
   components: {
     boxContent,
     imageContent
+  },
+  methods: {
+    findComponent (key) {
+      const compConst = {
+        header: 'boxContent',
+        hero: 'imageContent',
+        body: 'boxContent',
+        footer: 'boxContent'
+      }
+      return compConst[key] ? compConst[key] : ''
+    },
+    findPadding (key) {
+      const pdConst = {
+        header: 'pd-20px',
+        hero: '',
+        body: 'pd-20px',
+        footer: 'pd-10px'
+      }
+      return pdConst[key] ? pdConst[key] : ''
+    }
   },
   computed: {
     flexData () {
